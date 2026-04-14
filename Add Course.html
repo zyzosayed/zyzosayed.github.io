@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Course Organizer</title>
+   <link rel="stylesheet" href="CSS/Task it.CSS">
+</head>
+<body>
+   
+    <nav>
+        <a href="home.html"> Home </a>
+        <a href=" My Courses.html"> My Courses </a>
+        <a href="Add Course.html"> Add Course </a>
+        <a href=" Contact Us.html"> Contact Us </a>
+    </nav>
+ <main>
+  <form id="form" method="post">
+        <label for="AddCourseName">Course Name</label>
+        <input required type="text" id="AddCourseName" name="Course Name" placeholder=" Enter Course Name"> <br><br>
+        <label for="AddInstructor">Instructor</label>
+        <input required type="text" id="AddInstructor" name="Instructor" placeholder=" Enter Instructor"><br><br>
+        <label for="AddCreditHours">Credit Hours</label>
+        <input required type="number" id="AddCreditHours" name="Credit Hours" placeholder=" Enter Credit Hours"><br><br>
+        <label for="AddNotes"> Enter Your Notes </label><br><br>
+        <textarea name="Notes " id="AddNotes" placeholder="Enter Your Notes"rows="10"cols="80"></textarea>
+        <br>
+        <button id="Button"> Add Course</button>
+    </form>
+</main>
+   
+</body>
+</html>
