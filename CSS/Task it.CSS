@@ -194,29 +194,74 @@ h2 {
   margin: 0px;
 }
 @media (max-width: 768px) {
-    /* 1. السكشن الكبير يلم نفسه */
+    /* 1. تظبيط الـ Nav (تحت بعض ومنظمين) */
+    nav {
+        flex-direction: column; 
+        align-items: center;    
+        gap: 10px;              
+        padding: 20px 10px;     
+    }
+    
+    nav a {
+        font-size: 20px;
+        width: 100%;            
+        text-align: center;
+    }
+
+    /* 2. تظبيط الجدول (اللي كش وظبط معاك) */
     section {
         width: 95%; 
         padding: 10px;
         margin: 10px auto;
+        border-radius: 20px;
     }
 
-    /* 2. الجدول "يكش" وياخد عرض السكشن بالظبط */
     section table {
-        min-width: 100%; /* ده اللي كان مبوظ الدنيا عندك عشان كان 600 */
+        min-width: 100%; 
         width: 100%;
-        font-size: 11px; /* صغر الخط عشان الـ 3 أعمدة يقضوا الموبايل */
-        border-spacing: 5px; /* قلل المسافة بين المربعات */
+        font-size: 11px; 
+        border-spacing: 5px; 
     }
 
-    /* 3. الخلايا (الـ td والـ th) هي اللي فيها المشكلة */
     th, td {
-        padding: 10px 2px; /* قلل الـ padding جداً عشان المربع يصغر */
+        padding: 10px 2px; 
         text-align: center;
     }
 
-    /* 4. عشان اسم الدكتور ميزقش الخلية بره الشاشة */
     td {
-        word-break: break-all; /* لو الكلمة كبيرة يكسرها وينزل سطر جديد */
+        word-break: break-all; 
+    }
+
+    /* 3. تظبيط الـ Contact Us (عشان متبقاش لازقة في البرواز) */
+    .footer_h2AndLogo_contact {
+        width: 90%;             
+        margin: 20px auto;      
+        padding: 20px 10px;     
+        height: auto;           
+    }
+
+    h2 {
+        font-size: 30px;        
+        width: 100%;
+        margin: 0 auto 15px auto; 
+    }
+
+    .Logo_contact {
+        width: 80%;
+        max-width: 250px;
+        margin: 10px auto;
+    }
+
+    /* 4. لمسة أخيرة لبقية العناصر عشان الصفحة متتهزش */
+    #Welcome {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    p {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .Logo_home {
+        max-width: 200px;
     }
 }
