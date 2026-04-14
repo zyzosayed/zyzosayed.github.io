@@ -194,34 +194,29 @@ h2 {
   margin: 0px;
 }
 @media (max-width: 768px) {
-    /* تصغير الـ container اللي شايل الجدول */
+    /* 1. السكشن الكبير يلم نفسه */
     section {
-        width: 98%; 
-        padding: 5px;
-        margin-top: 15px;
-        border-radius: 15px; /* صغرنا الحواف شوية للموبايل */
-        overflow-x: hidden; /* عشان ميهزش الصفحة يمين وشمال */
+        width: 95%; 
+        padding: 10px;
+        margin: 10px auto;
     }
 
+    /* 2. الجدول "يكش" وياخد عرض السكشن بالظبط */
     section table {
-        min-width: 100%; /* عشان يفرش عرض الموبايل بالظبط */
-        border-spacing: 2px 5px; /* مسافات صغيرة جداً بين الخلايا */
-        font-size: 12px; /* خط صغير عشان الكلام ميكبرش الخلية بالعافية */
+        min-width: 100%; /* ده اللي كان مبوظ الدنيا عندك عشان كان 600 */
+        width: 100%;
+        font-size: 11px; /* صغر الخط عشان الـ 3 أعمدة يقضوا الموبايل */
+        border-spacing: 5px; /* قلل المسافة بين المربعات */
     }
 
-    th {
-        padding: 8px 2px; /* مساحة صغيرة جداً للعناوين */
+    /* 3. الخلايا (الـ td والـ th) هي اللي فيها المشكلة */
+    th, td {
+        padding: 10px 2px; /* قلل الـ padding جداً عشان المربع يصغر */
+        text-align: center;
     }
 
+    /* 4. عشان اسم الدكتور ميزقش الخلية بره الشاشة */
     td {
-        padding: 10px 4px; /* مساحة صغيرة للكلام */
-        border-radius: 8px; /* تقليل الدوران شوية */
-        word-wrap: break-word; /* أهم خاصية: لو الاسم طويل ينزل سطر جديد */
+        word-break: break-all; /* لو الكلمة كبيرة يكسرها وينزل سطر جديد */
     }
-    
-    /* تصغير بقية العناصر عشان متزحمش الشاشة */
-    #Welcome { font-size: 22px; }
-    p { font-size: 15px; letter-spacing: 1px; }
-    nav a { font-size: 18px; }
-    .Logo_home { max-width: 150px; }
 }
