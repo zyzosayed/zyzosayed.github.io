@@ -191,20 +191,58 @@ h2 {
   left: 0;
   width: 100%;
   box-sizing: border-box; 
-  margin: 0px;;
+  margin: 0px;
 }
 @media (max-width: 768px) {
-    nav{
+    nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 15px;
         padding: 20px;
     }
+    nav a {
+        font-size: 25px; 
+        width: 100%;
+        text-align: center;
+    }
     nav a:hover {
         width: 100%; 
     }
-    #Welcome, h2 {
+    #Welcome {
         margin-top: 20px;
+        font-size: 30px; 
+    }
+    p {
+        font-size: 20px; 
+        letter-spacing: 2px;
+    }
+    
+    section {
+        border-radius: 30px; 
+        padding: 10px;
+        margin-top: 20px;
+    }
+    section table {
+        min-width: 100%; 
+        font-size: 16px; 
+        border-spacing: 5px 8px; 
+    }
+    th, td {
+        padding: 10px; 
+    }
+    main form label {
+        font-size: 18px;
+    }
+    main form input, main form textarea {
+        width: 100%; 
+    }
+    h2 {
+        font-size: 30px; 
+        margin: 10px auto; 
+    }
+    .footer_endWeb h2 {
+        font-size: 18px; 
+        padding: 10px;
     }
 }
