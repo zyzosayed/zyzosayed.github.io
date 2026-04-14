@@ -193,6 +193,7 @@ h2 {
   box-sizing: border-box; 
   margin: 0px;
 }
+/* --- Media Query بعد التعديل لضبط الجدول --- */
 @media (max-width: 768px) {
     nav {
         display: flex;
@@ -206,9 +207,6 @@ h2 {
         width: 100%;
         text-align: center;
     }
-    nav a:hover {
-        width: 100%; 
-    }
     #Welcome {
         margin-top: 20px;
         font-size: 30px; 
@@ -218,40 +216,11 @@ h2 {
         letter-spacing: 2px;
     }
     section {
-        width: 95%;
+        width: 98%; /* وسعنا المساحة شوية للموبايل */
         border-radius: 30px; 
-        padding: 5px;
+        padding: 10px 5px;
         margin-top: 20px;
-        overflow-x: auto;
     }
     section table {
-        min-width: 100%; 
-        font-size: 14px; 
-        border-spacing: 5px; 
-    }
-    th, td {
-        padding: 8px 4px; 
-    }
-    main form label {
-        font-size: 18px;
-    }
-    main form input, main form textarea {
-        width: 100%; 
-    }
-
-    /* تظبيط Contact Us عشان متلزقش */
-    .footer_h2AndLogo_contact {
-        width: 90%; 
-        padding: 20px; 
-        margin: 20px auto;
-    }
-    h2 {
-        font-size: 28px; 
-        width: 100%; 
-        margin: 0; 
-    }
-    .footer_endWeb h2 {
-        font-size: 18px; 
-        padding: 10px;
-    }
-}
+        min-width: unset; 
+    }}
