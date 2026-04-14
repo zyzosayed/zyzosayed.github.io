@@ -195,32 +195,66 @@ h2 {
 }
 /* --- Media Query بعد التعديل لضبط الجدول --- */
 @media (max-width: 768px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        padding: 20px;
-    }
-    nav a {
-        font-size: 25px; 
-        width: 100%;
-        text-align: center;
-    }
-    #Welcome {
-        margin-top: 20px;
-        font-size: 30px; 
-    }
-    p {
-        font-size: 20px; 
-        letter-spacing: 2px;
-    }
+    /* تصغير المسافات في الـ Container الأساسي */
     section {
-        width: 98%; /* وسعنا المساحة شوية للموبايل */
-        border-radius: 30px; 
-        padding: 10px 5px;
-        margin-top: 20px;
+        width: 92%; 
+        border-radius: 20px;
+        padding: 15px 10px;
+        margin-top: 15px;
     }
+
     section table {
-        min-width: unset; 
-    }}
+        display: block;
+        width: 100%;
+    }
+
+    section table thead {
+        display: none; /* بنخفي العناوين عشان زحمة الموبايل */
+    }
+
+    section table tr {
+        display: block;
+        margin-bottom: 15px; /* مسافة بسيطة بين كل مادة والتانية */
+        border: 2px solid rgba(0, 242, 255, 0.5);
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.05);
+        overflow: hidden;
+    }
+
+    section table td {
+        display: flex;
+        justify-content: space-between; /* بيجيب اسم المعلومة يمين والقيمة شمال */
+        align-items: center;
+        padding: 12px 15px !important;
+        font-size: 16px;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        background-color: transparent;
+    }
+
+    /* بنشيل الخط اللي تحت آخر معلومة في الكارت */
+    section table td:last-child {
+        border-bottom: none;
+    }
+
+    /* إضافة اسم العمود يدوياً قبل كل قيمة عشان المستخدم يفهم ده إيه */
+    section table td::before {
+        font-weight: bold;
+        color: rgb(209, 255, 118);
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    /* لو ضفت data-label في الـ HTML هيظهر هنا، لو مضافتش ممكن نستخدم الـ nth-child كحل بديل: */
+    section table td:nth-child(1)::before { content: "Course: "; }
+    section table td:nth-child(2)::before { content: "Instructor: "; }
+    section table td:nth-child(3)::before { content: "Credits: "; }
+
+    /* تصغير العناوين واللوجو عشان المساحة */
+    #Welcome { font-size: 24px; margin-top: 15px; }
+    p { font-size: 16px; letter-spacing: 1px; }
+    .Logo_home { max-width: 250px; }
+    
+    nav a { font-size: 22px; }
+    .footer_endWeb h2 { font-size: 14px; padding: 8px; }
+}
