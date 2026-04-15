@@ -169,7 +169,7 @@ h2 {
     text-align: center;
 }
 .footer_h2AndLogo_contact{
-     border: 5px rgb(0, 183, 255) solid;
+    border: 5px rgb(0, 183, 255) solid;
     border-radius: 30px;
     width: 95%; 
     max-width: 1200px;
@@ -178,7 +178,7 @@ h2 {
     overflow: hidden;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     /* 1. تظبيط الـ Nav (تحت بعض ومنظمين) */
     nav {
         display: flex;
@@ -217,7 +217,6 @@ h2 {
     td {
         word-break: break-all; 
     }
-
     /* 3. تظبيط الـ Contact Us (عشان متبقاش لازقة في البرواز) */
     .footer_h2AndLogo_contact {
         width: 90%;             
@@ -225,13 +224,11 @@ h2 {
         padding: 20px 10px;     
         height: auto;           
     }
-
     h2 {
         font-size: 30px;        
         width: 100%;
         margin: 0 auto 15px auto; 
     }
-
     .Logo_contact {
         width: 80%;
         max-width: 250px;
@@ -246,8 +243,5 @@ h2 {
     p {
         font-size: 18px;
         letter-spacing: 1px;
-    }
-    .Logo_home {
-        max-width: 200px;
     }
 }
