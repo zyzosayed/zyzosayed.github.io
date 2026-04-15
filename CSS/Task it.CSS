@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-   background-color:rgb(43, 117, 116); 
+   background-color:#2B7574;
 }
 /* الجزء الخاص بصفحة Home والكلام المكتوب فيها */
 #Welcome {
@@ -23,7 +23,7 @@ p {
     text-align: center;
     letter-spacing: 5px;
 }
-.Logo_home, .Logo_contact {
+.Logo_contact {
     border: 5px rgb(0, 183, 255) solid;
     border-radius: 20px; 
     display: block;
@@ -101,7 +101,7 @@ td {
     padding: 20px;
 }
 th:hover, td:hover {
-    background-image: linear-gradient(to right, rgb(183, 0, 255) 20%, rgb(122, 255, 122));
+    background-image: linear-gradient(to right, rgba(104, 231, 190, 0.863) 20%, rgb(122, 255, 122));
 }
 /* الجزء الخاص ب form وتاثيراته */
 #form {
@@ -177,22 +177,7 @@ h2 {
     margin: 20px auto;
     overflow: hidden;
 }
-.footer_endWeb h2{
- background-color:rgba(75, 255, 165, 0.162) ;
-   color: rgb(209, 255, 118);
-  display: flex;
-  justify-content: center;
-  padding: 15px 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 35px;
-  letter-spacing: 1px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  box-sizing: border-box; 
-  margin: 0px;
-}
+
 @media (max-width: 768px) {
     /* 1. تظبيط الـ Nav (تحت بعض ومنظمين) */
     nav {
