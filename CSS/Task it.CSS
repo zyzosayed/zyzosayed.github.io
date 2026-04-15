@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-   background-color:#2B7574;
+   background-color:rgb(43, 117, 116);
 }
 /* الجزء الخاص بصفحة Home والكلام المكتوب فيها */
 #Welcome {
@@ -177,9 +177,8 @@ h2 {
     margin: 20px auto;
     overflow: hidden;
 }
-
+/* ألجز الخاص ب حتت responsive وتاثيرتها  */
 @media (max-width: 780px) {
-    /* 1. تظبيط الـ Nav (تحت بعض ومنظمين) */
     nav {
         display: flex;
         flex-direction: column; 
@@ -187,34 +186,27 @@ h2 {
         gap: 10px;              
         padding: 20px 10px;     
     }
-    
     nav a {
         font-size: 20px;
         width: 100%;            
         text-align: center;
     }
-
-    /* 2. تظبيط الجدول (اللي كش وظبط معاك) */
     section {
         width: 95%; 
         padding: 10px;
         margin: 10px auto;
         border-radius: 20px;
     }
-
     section table {
         min-width: 100%; 
         width: 100%;
         font-size: 11px; 
         border-spacing: 5px; 
     }
-
     th, td {
         padding: 10px 2px; 
         text-align: center;
     }
-
-    /* 3. تظبيط الـ Contact Us (عشان متبقاش لازقة في البرواز) */
     .footer_h2AndLogo_contact {
         width: 90%;             
         margin: 20px auto;      
@@ -231,8 +223,6 @@ h2 {
         max-width: 250px;
         margin: 10px auto;
     }
-
-    /* 4. لمسة أخيرة لبقية العناصر عشان الصفحة متتهزش */
     #Welcome {
         font-size: 25px;
         margin-top: 20px;
