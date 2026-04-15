@@ -214,9 +214,6 @@ h2 {
         text-align: center;
     }
 
-    td {
-        word-break: break-all; 
-    }
     /* 3. تظبيط الـ Contact Us (عشان متبقاش لازقة في البرواز) */
     .footer_h2AndLogo_contact {
         width: 90%;             
